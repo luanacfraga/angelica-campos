@@ -120,13 +120,13 @@ export default function Home() {
             </button>
 
             {/* Logo Mobile - Centralizada (Tamanho ideal para navegação) */}
-            <div className="md:hidden absolute left-1/2 transform -translate-x-1/2">
+            <div className="md:hidden absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <Image
                 src="/images/logo.png"
                 alt="Salão da Angelica"
-                width={120}
-                height={75}
-                className="h-16 w-auto drop-shadow-sm"
+                width={340}
+                height={212}
+                className="h-48 w-auto drop-shadow-sm"
                 priority
               />
             </div>
@@ -200,23 +200,23 @@ export default function Home() {
       {/* 1. HERO MODERNO - Com imagem integrada */}
       <section
         id="home"
-        className="pt-28 sm:pt-32 md:pt-40 pb-12 sm:pb-20 px-4"
+        className="pt-56 sm:pt-32 md:pt-40 pb-12 sm:pb-20 px-4"
         style={{
           background: "linear-gradient(180deg, #FAF9F7 0%, #F5F2EF 100%)",
         }}
       >
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 xl:gap-16 items-center">
             {/* Texto */}
-            <div className="text-center lg:text-left order-2 lg:order-1 flex flex-col gap-1">
-              {/* Logo - Visível em todas as telas para impacto visual */}
-              <div className="flex justify-center lg:justify-start animate-fade-in -mb-8 lg:-mb-16">
+            <div className="text-center lg:text-left order-2 lg:order-1 flex flex-col gap-2">
+              {/* Logo - Visível apenas em desktop pois no mobile já está no menu */}
+              <div className="hidden md:flex justify-center lg:justify-start animate-fade-in mb-2 lg:-mb-16">
                 <Image
                   src="/images/logo.png"
                   alt="Salão da Angelica"
                   width={900}
                   height={563}
-                  className="h-48 sm:h-64 md:h-72 lg:h-80 xl:h-96 w-auto drop-shadow-lg"
+                  className="h-24 sm:h-64 md:h-72 lg:h-80 xl:h-96 w-auto drop-shadow-lg"
                   priority
                 />
               </div>
@@ -274,7 +274,7 @@ export default function Home() {
 
             {/* Imagem */}
             <div className="flex justify-center items-center order-1 lg:order-2">
-              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg group">
+              <div className="relative w-56 sm:w-full sm:max-w-md lg:max-w-lg group">
                 {/* Elemento decorativo sutil atrás */}
                 <div
                   className="absolute -right-4 -bottom-4 w-full h-full rounded-[2rem] -z-10 transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"
