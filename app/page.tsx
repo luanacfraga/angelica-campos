@@ -200,7 +200,7 @@ export default function Home() {
       {/* 1. HERO MODERNO - Com imagem integrada */}
       <section
         id="home"
-        className="pt-56 sm:pt-32 md:pt-40 pb-12 sm:pb-20 px-4"
+        className="pt-44 sm:pt-32 md:pt-40 pb-12 sm:pb-20 px-4"
         style={{
           background: "linear-gradient(180deg, #FAF9F7 0%, #F5F2EF 100%)",
         }}
