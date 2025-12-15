@@ -197,7 +197,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* 1. HERO MODERNO - Com imagem integrada */}
       <section
         id="home"
         className="pt-44 sm:pt-32 md:pt-40 pb-12 sm:pb-20 px-4"
