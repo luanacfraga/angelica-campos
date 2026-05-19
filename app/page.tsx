@@ -64,7 +64,7 @@ export default function Home() {
 
   const whatsappNumber = "5531973155465";
   const whatsappMessage = encodeURIComponent(
-    "Olá! Gostaria de agendar um horário."
+    "Olá! Gostaria de agendar um horário.",
   );
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -283,7 +283,7 @@ export default function Home() {
                 {/* Imagem limpa */}
                 <div className="relative rounded-[2rem] overflow-hidden shadow-sm">
                   <Image
-                    src="/images/image.png"
+                    src="/images/angelica.png"
                     alt="Angelica - Profissional de depilação, sobrancelhas e massagem"
                     width={500}
                     height={600}
